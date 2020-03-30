@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.RegisterActivity">
+    <!-- 공백 주석임
+              &#160;&#160;&#160; -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/registerTextView"
+        android:textColor="@color/colorBlue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/accountRegsiterPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/accountRegsiterPhoto"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="524dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/account" />
+
+    <EditText
+        android:id="@+id/idRegisterEtv"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/radius"
+        android:gravity="start|center"
+        android:hint="@string/name"
+        android:textAlignment="viewStart"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountRegsiterPhoto" />
+
+    <EditText
+        android:id="@+id/emailRegisterEtv"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/radius"
+        android:gravity="start|center"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idRegisterEtv" />
+
+    <EditText
+        android:id="@+id/nickNameRegisterEtv"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/radius"
+        android:gravity="start|center"
+        android:hint="@string/nickname"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegisterEtv" />
+
+    <EditText
+        android:id="@+id/pwRegisterEtv"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/radius"
+        android:gravity="start|center"
+        android:hint="@string/pwRegisterEtv"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickNameRegisterEtv" />
+
+    <EditText
+        android:id="@+id/pwCheckRegisterEtv"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/radius"
+        android:gravity="start|center"
+        android:hint="@string/pwCheckEtv"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwRegisterEtv" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/login_radius"
+        android:gravity="start|center"
+        android:text="@string/registerButton"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwCheckRegisterEtv" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

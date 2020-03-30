@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_hourglass"
+        app:layout_constraintBottom_toTopOf="@+id/idEditTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/idEditTv"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/radius"
+        android:inputType="textEmailAddress"
+        android:gravity="start|center"
+        android:hint="@string/id"
+        android:textAlignment="viewStart"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/registerTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pwEditTv"
+        android:layout_width="205dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/radius"
+        android:gravity="start|center"
+        android:hint="@string/password"
+        android:textAlignment="viewStart"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditTv"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/login_radius"
+        android:gravity="start|center"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditTv" />
+
+    <TextView
+        android:id="@+id/loginSessionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/login_session"
+        app:layout_constraintEnd_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/pwEditTv" />
+
+    <ImageView
+        android:id="@+id/loginSessionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/check_before"
+        app:layout_constraintBottom_toBottomOf="@+id/loginSessionTv"
+        app:layout_constraintEnd_toStartOf="@+id/loginSessionTv"
+        app:layout_constraintTop_toBottomOf="@+id/pwEditTv" />
+
+    <TextView
+        android:id="@+id/pwFindTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="32dp"
+        android:text="@string/pwFind"
+        app:layout_constraintEnd_toEndOf="@+id/loginSessionTv"
+        app:layout_constraintTop_toBottomOf="@+id/loginSessionTv" />
+
+    <TextView
+        android:id="@+id/registerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="222dp"
+        android:text="@string/registerTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/or"
+        app:layout_constraintTop_toBottomOf="@+id/idEditTv" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pwFindTv"
+        app:layout_constraintStart_toEndOf="@+id/pwFindTv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

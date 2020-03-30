@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "952506603544",
+    "firebase_url": "https://hourglass-b4f24.firebaseio.com",
+    "project_id": "hourglass-b4f24",
+    "storage_bucket": "hourglass-b4f24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952506603544:android:a5eae7bb222bffb04f4b6d",
+        "android_client_info": {
+          "package_name": "com.timeattack.hourglass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952506603544-fqrqc8ocohak27qnfbcahb1s5pnkbn9i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timeattack.hourglass",
+            "certificate_hash": "fd715a01c16c1320134757d02374f48a479aca9d"
+          }
+        },
+        {
+          "client_id": "952506603544-0mttqm7r3iav6spb9jtqupabb0i49n0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMib9wj9Y27IfkyI-evzJC4Zo1Q9YfHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952506603544-0mttqm7r3iav6spb9jtqupabb0i49n0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
