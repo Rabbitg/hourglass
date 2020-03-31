@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/account" />
 
     <EditText
-        android:id="@+id/idRegisterEtv"
+        android:id="@+id/nameRegisterEtv"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="70dp"
@@ -42,6 +42,7 @@
         android:hint="@string/name"
         android:textAlignment="viewStart"
         android:typeface="sans"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accountRegsiterPhoto" />
@@ -61,7 +62,7 @@
         android:typeface="sans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idRegisterEtv" />
+        app:layout_constraintTop_toBottomOf="@+id/nameRegisterEtv" />
 
     <EditText
         android:id="@+id/nickNameRegisterEtv"
@@ -90,7 +91,7 @@
         android:background="@drawable/radius"
         android:gravity="start|center"
         android:hint="@string/pwRegisterEtv"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:textAlignment="viewStart"
         android:typeface="sans"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +108,7 @@
         android:background="@drawable/radius"
         android:gravity="start|center"
         android:hint="@string/pwCheckEtv"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:textAlignment="viewStart"
         android:typeface="sans"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +132,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pwCheckRegisterEtv" />
 
-
+    <ImageView
+        android:id="@+id/backbuttonRegister"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
