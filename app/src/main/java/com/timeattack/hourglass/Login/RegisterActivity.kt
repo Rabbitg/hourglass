@@ -2,7 +2,6 @@ package com.timeattack.hourglass.Login
 
 import android.app.Activity
 import android.content.Intent
-import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -33,7 +32,7 @@ class RegisterActivity : AppCompatActivity() {
             //회원 가입 입력 폼
             performRegister()
         }
-        selectPhoto_button.setOnClickListener {
+        selectPhoto_button_register.setOnClickListener {
             Log.d(TAG, "Try to show photo selector")
 
             val intent = Intent(Intent.ACTION_PICK)
@@ -62,7 +61,8 @@ class RegisterActivity : AppCompatActivity() {
 
             val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedPhotoUri)
 
-            selectPhoto_button.setImageBitmap(bitmap)
+            selectPhoto_imageview_register.setImageBitmap(bitmap)
+            selectPhoto_button_register.alpha = 0f
 
 
         }
@@ -150,7 +150,6 @@ class RegisterActivity : AppCompatActivity() {
             }
             .addOnFailureListener{
                 Log.d(TAG, "Failed to create user: ${it.message}")
-                Toast.makeText(this, "Failed to create user: ${it.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
