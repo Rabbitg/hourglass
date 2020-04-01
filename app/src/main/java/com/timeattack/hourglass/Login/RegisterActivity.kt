@@ -2,6 +2,8 @@ package com.timeattack.hourglass.Login
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Matrix
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -63,10 +65,9 @@ class RegisterActivity : AppCompatActivity() {
 
             selectPhoto_imageview_register.setImageBitmap(bitmap)
             selectPhoto_button_register.alpha = 0f
-
-
         }
     }
+
 
     private fun uploadImageToFirebaseStorage() {
 
