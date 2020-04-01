@@ -6,11 +6,11 @@
     "storage_bucket": "hourglass-709f2.appspot.com"
   },
   "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:785721561555:android:09dddf98afa890fbc45f26",
-        "android_client_info": {
-          "package_name": "com.timeattack.hourglass"
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:785721561555:android:09dddf98afa890fbc45f26",
+          "android_client_info": {
+            "package_name": "com.timeattack.hourglass"
         }
       },
       "oauth_client": [

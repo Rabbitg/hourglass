@@ -15,15 +15,15 @@
         android:text="@string/registerTextView"
         android:textColor="@color/colorBlue"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/accountRegsiterPhoto"
+        app:layout_constraintBottom_toTopOf="@+id/selectPhoto_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/accountRegsiterPhoto"
+        android:id="@+id/selectPhoto_button"
         android:layout_width="125dp"
-        android:layout_height="0dp"
+        android:layout_height="125dp"
         android:layout_marginBottom="524dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountRegsiterPhoto" />
+        app:layout_constraintTop_toBottomOf="@+id/selectPhoto_button" />
 
     <EditText
         android:id="@+id/emailRegisterEtv"
