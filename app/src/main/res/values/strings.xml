@@ -15,5 +15,11 @@
     <string name="pwRegisterEtv">&#160;&#160;&#160;비밀번호</string>
     <string name="pwCheckEtv">&#160;&#160;&#160;비밀번호 확인</string>
     <string name="registerButton">가입하기</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="people">People</string>
+    <string name="settings">Settings</string>
+
+
 
 </resources>
