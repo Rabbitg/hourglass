@@ -11,115 +11,155 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/ic_hourglass"
-        app:layout_constraintBottom_toTopOf="@+id/idLoginEtv"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/idLoginEtv"
         android:layout_width="205dp"
         android:layout_height="52dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="308dp"
         android:background="@drawable/radius"
         android:gravity="start|center"
         android:hint="@string/id"
         android:inputType="textEmailAddress"
         android:textAlignment="viewStart"
         android:typeface="sans"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="70dp"
         android:layout_height="30dp"
-        android:layout_marginStart="205dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/login_radius"
         android:gravity="start|center"
         android:text="@string/login"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:typeface="sans"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idLoginEtv" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.4" />
 
     <ImageView
         android:id="@+id/loginSessionChkBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="4dp"
         android:src="@drawable/check_before"
-        app:layout_constraintBottom_toBottomOf="@+id/loginSessionTv"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/loginSessionTv"
-        app:layout_constraintTop_toBottomOf="@+id/pwLoginEtv"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
         android:id="@+id/loginSessionTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="28dp"
         android:text="@string/login_session"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/loginButton"
-        app:layout_constraintTop_toBottomOf="@+id/pwLoginEtv" />
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.56" />
 
     <EditText
         android:id="@+id/pwLoginEtv"
         android:layout_width="205dp"
         android:layout_height="52dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/radius"
         android:gravity="start|center"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textAlignment="viewStart"
         android:typeface="sans"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/idLoginEtv" />
 
     <TextView
         android:id="@+id/pwFindLoginTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
         android:text="@string/pwFind"
-        app:layout_constraintEnd_toEndOf="@+id/loginSessionTv"
-        app:layout_constraintTop_toBottomOf="@+id/loginSessionTv" />
-
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.818" />
 
     <TextView
         android:id="@+id/registerLoginTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginBottom="196dp"
+        android:layout_marginEnd="28dp"
         android:text="@string/registerTv"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/or" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.818" />
 
-    <TextView
-        android:id="@+id/or"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-        android:text="@string/or"
-        app:layout_constraintBaseline_toBaselineOf="@+id/pwFindLoginTv"
-        app:layout_constraintStart_toEndOf="@+id/pwFindLoginTv" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="94dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="93dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="305dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="181dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="265dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="222dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.timeattack.hourglass
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +8,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.timeattack.hourglass.Fragment.HomeFragment
 import com.timeattack.hourglass.Fragment.PeopleFragment
 import com.timeattack.hourglass.Fragment.SettingsFragment
+import com.timeattack.hourglass.Login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -50,11 +52,12 @@ class MainActivity : AppCompatActivity() {
         // 로그아웃
         bt_logout.setOnClickListener {
             auth.signOut()
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
             finish()
         }
 
     }
-
 
     private fun loadFragment(fragment: Fragment) {
         // load fragment
