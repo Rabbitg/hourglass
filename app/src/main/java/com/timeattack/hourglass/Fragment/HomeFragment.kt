@@ -1,11 +1,15 @@
 package com.timeattack.hourglass.Fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.timeattack.hourglass.R
+
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,6 +32,11 @@ class HomeFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        // 프래그먼트 종료 시킬 때
+        val fragmentManager: FragmentManager = activity!!.supportFragmentManager
+        fragmentManager.beginTransaction().remove(this@HomeFragment).commit()
+        fragmentManager.popBackStack()
     }
 
     override fun onCreateView(
@@ -36,7 +45,9 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
+
     }
+
 
     companion object {
         /**

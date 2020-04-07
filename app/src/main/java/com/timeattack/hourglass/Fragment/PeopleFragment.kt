@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
 import com.timeattack.hourglass.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -28,6 +29,10 @@ class PeopleFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+        // 프래그먼트 종료 시킬 때
+        val fragmentManager: FragmentManager = activity!!.supportFragmentManager
+        fragmentManager.beginTransaction().remove(this@PeopleFragment).commit()
+        fragmentManager.popBackStack()
     }
 
     override fun onCreateView(
