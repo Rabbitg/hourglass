@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.timeattack.hourglass.BottomNavigation
 import com.timeattack.hourglass.MainActivity
 import com.timeattack.hourglass.R
 import kotlinx.android.synthetic.main.activity_login.*
@@ -96,7 +97,7 @@ class LoginActivity : AppCompatActivity() {
     fun updateUI(cUser: FirebaseUser? = null) {
         if(cUser != null){
             Toast.makeText(this,"로그인 성공",Toast.LENGTH_SHORT).show()
-            val mainIntent = Intent(this, MainActivity::class.java)
+            val mainIntent = Intent(this, BottomNavigation::class.java)
             startActivity(mainIntent)
             finish()
         }
